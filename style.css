@@ -1,0 +1,53 @@
+
+.main-head {
+    width: auto;
+    height: 75px;
+    margin: 0px;
+    background-color: darkslategray;
+    padding-right: 15px;
+}
+
+body {
+    margin: 0px;
+}
+
+
+
+.myname {
+    height: 65px;
+    line-height: 65px;
+    color: white;
+    font-family: sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 15px;
+    float: left;
+    padding: 5px;
+    text-decoration: none;
+}
+.myname:hover {
+    cursor: pointer;
+}
+
+.headerlink {
+    color: white;
+    display: inline-block;
+    height: 65px;
+    line-height: 65px;
+    float: right;
+    margin-right: 10px;
+    font-family: sans-serif;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.headerlink:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.main-content {
+    width: auto;
+    height: auto;
+    border: none;
+}
