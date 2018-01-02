@@ -17,29 +17,37 @@
     
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script>
-        $.get("home.html", function(data){
+        $("#mainc").load("home.html");
+        /*$.get("home.html", function(data){
             $("#mainc").replaceWith(data);
-        });
-        
+        });*/
+
         function loadHome(){
-            $.get("home.html", function(data){
+            $("#mainc").load("home.html");
+            /*$.get("home.html", function(data){
                 $("#mainc").replaceWith(data);
-            });
+            });*/
         }
         function loadAbout(){
+            $("#mainc").load("about.html");
+            /*
             $.get("about.html", function(data){
                 $("#mainc").replaceWith(data);
-            });
+            });*/
         }
         function loadContact(){
+            $("#mainc").load("contact.html");
+            /*
             $.get("contact.html", function(data){
                 $("#mainc").replaceWith(data);
-            });
+            });*/
         }
         function loadResume(){
+            $("#mainc").load("resume.html");
+            /*
             $.get("contact.html", function(data){
                 $("#mainc").replaceWith(data);
-            });
+            });*/
         }
     </script>
     <!--<iframe name="main-content" class="main-content" src="home.html" />-->
