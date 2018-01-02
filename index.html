@@ -3,15 +3,49 @@
 <head>
     <title>Matthew Doto</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans" rel="stylesheet">
 </head>
 <body>
     <header class="main-head">
-        <a class="myname" href="home.html" target="main-content">Matthew Doto</a>
-        <a class="headerlink" href="resume.html" target="main-content">Resume</a>
-        <a class="headerlink" href="http://www.github.com/Cheeseypi" target="main-content">Github</a>
-        <a class="headerlink" href="contact.html" target="main-content">Contact</a>
-        <a class="headerlink" href="about.html" target="main-content">About</a>
+        <div class="myname" onclick="loadHome()">Matthew Doto</div>
+        <div class="headerlink" onclick="loadResume()">Resume</div>
+        <a class="headerlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
+        <div class="headerlink" onclick="loadContact()">Contact</div>
+        <div class="headerlink" onclick="loadAbout()">About</div>
     </header>
-    <iframe name="main-content" class="main-content" src="home.html" />
+    <div id="mainc" class="main-content"></div>
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("home.html", function(data){
+            $("#mainc").replaceWith(data);
+        });
+        
+        function loadHome(){
+            alert("Home");
+            $.get("home.html", function(data){
+                $("#mainc").replaceWith(data);
+            });
+        }
+        function loadAbout(){
+            alert("About");
+            $.get("about.html", function(data){
+                $("#mainc").replaceWith(data);
+            });
+        }
+        function loadContact(){
+            alert("Contact");
+            $.get("contact.html", function(data){
+                $("#mainc").replaceWith(data);
+            });
+        }
+        function loadResume(){
+            alert("Resume");
+            $.get("contact.html", function(data){
+                $("#mainc").replaceWith(data);
+            });
+        }
+    </script>
+    <!--<iframe name="main-content" class="main-content" src="home.html" />-->
 </body>
 </html>
