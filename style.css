@@ -1,10 +1,12 @@
 
 .main-head {
-    width: auto;
-    height: 10vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 75px;
     margin: 0px;
     background-color: #222222;
-    padding-right: 15px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
 }
@@ -15,15 +17,19 @@ body {
 }
 
 .myname {
-    height: 8vh;
-    line-height: 8vh;
+    height: 20px;
+    line-height: 27px;
     color: white;
     vertical-align: middle;
     display: inline-block;
     margin-left: 15px;
+    margin-top:17.5px;
+    margin-bottom: 17.5px;
     float: left;
-    padding: 1vh;
+    padding: 10px;
     text-decoration: none;
+    background-color: #181818;
+    border-radius: 10px;
 }
 .myname:hover {
     cursor: pointer;
@@ -32,14 +38,11 @@ body {
 .headerlink {
     color: white;
     display: inline-block;
-    height: 8vh;
-    line-height: 8vh;
+    height: 55px;
+    line-height: 55px;
     float: right;
     margin-right: 10px;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -50,6 +53,56 @@ body {
 
 .main-content {
     width: 100%;
-    height: 89vh;
+    height: 100%;
+    margin-top: 75px;
     border: none;
 }
+
+
+#github {
+    cursor: alias;
+}
+
+.navbutton {
+    float: right;
+    display: none;
+    height: 100%;
+    width: 75px;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 560px){
+    .headerlink{
+        display: none;
+    }
+    
+    .navbutton {
+        display: inline-block;
+    }
+}
+
+#addlMenu {
+    position: absolute;
+    width: 200px;
+    top: 75px;
+    right: 0px;
+    background-color: #222222;
+    display: none;
+}
+
+.addlink {
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: none;
+    cursor: pointer;
+}
+
+
