@@ -14,10 +14,10 @@
         <div class="headerlink" onclick="loadAbout()">About</div>
         <button class="navbutton" onclick="toggleAddlMenu()">&#8801;</button>
         <div id="addlMenu">
-            <div class="addlink" onclick="loadResume()">Resume</div>
-            <a class="addlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
-            <div class="addlink" onclick="loadContact()">Contact</div>
             <div class="addlink" onclick="loadAbout()">About</div>
+            <div class="addlink" onclick="loadContact()">Contact</div>
+            <a class="addlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
+            <div class="addlink" onclick="loadResume()">Resume</div>
         </div>
     </header>
     <div id="mainc" class="main-content"></div>
@@ -29,20 +29,23 @@
             $("#mainc").replaceWith(data);
         });*/
         
+        $('html').click(function(){
+            $("#addlMenu").hide();
+        });
+        
         function toggleAddlMenu(){
+            event.stopPropagation();
             $("#addlMenu").toggle();
         }
 
         function loadHome(){
             $("#mainc").load("home.html");
-            $("#addlMenu").hide();
             /*$.get("home.html", function(data){
                 $("#mainc").replaceWith(data);
             });*/
         }
         function loadAbout(){
             $("#mainc").load("about.html");
-            $("#addlMenu").hide();
             /*
             $.get("about.html", function(data){
                 $("#mainc").replaceWith(data);
@@ -50,7 +53,6 @@
         }
         function loadContact(){
             $("#mainc").load("contact.html");
-            $("#addlMenu").hide();
             /*
             $.get("contact.html", function(data){
                 $("#mainc").replaceWith(data);
@@ -58,7 +60,6 @@
         }
         function loadResume(){
             $("#mainc").load("resume.html");
-            $("#addlMenu").hide();
             /*
             $.get("contact.html", function(data){
                 $("#mainc").replaceWith(data);
