@@ -61,10 +61,10 @@ body {
 }
 
 .bodybox {
-    background-color: silver;
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 3px 33px -8px rgba(0,0,0,0.75);
+    margin: 0px;
 }
 
 #github {
