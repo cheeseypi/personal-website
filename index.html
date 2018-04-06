@@ -13,10 +13,10 @@
         <a class="headerlink" href="http://www.linkedin.com/in/matt-vincent-doto" target="_blank">LinkedIn</a>
         <a class="headerlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
         <div class="headerlink" onclick="loadContact()">Contact</div>
-        <div class="headerlink" onclick="loadAbout()">About</div>
+        <div class="headerlink" onclick="loadProjects()">Projects</div>
         <button class="navbutton" onclick="toggleAddlMenu()">&#8801;</button>
         <div id="addlMenu">
-            <div class="addlink" onclick="loadAbout()">About</div>
+            <div class="addlink" onclick="loadProjects()">Projects</div>
             <div class="addlink" onclick="loadContact()">Contact</div>
             <a class="addlink" href="http://www.linkedin.com/in/matt-vincent-doto" target="_blank">LinkedIn</a>
             <a class="addlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
@@ -43,32 +43,16 @@
 
         function loadHome(){
             $("#mainc").load("home.html");
-            /*$.get("home.html", function(data){
-                $("#mainc").replaceWith(data);
-            });*/
         }
-        function loadAbout(){
-            $("#mainc").load("about.html");
-            /*
-            $.get("about.html", function(data){
-                $("#mainc").replaceWith(data);
-            });*/
+        function loadProjects(){
+            $("#mainc").load("projects.html");
         }
         function loadContact(){
             $("#mainc").load("contact.html");
-            /*
-            $.get("contact.html", function(data){
-                $("#mainc").replaceWith(data);
-            });*/
         }
         function loadResume(){
             $("#mainc").load("resume.html");
-            /*
-            $.get("contact.html", function(data){
-                $("#mainc").replaceWith(data);
-            });*/
         }
     </script>
-    <!--<iframe name="main-content" class="main-content" src="home.html" />-->
 </body>
 </html>
