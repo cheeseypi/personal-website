@@ -121,3 +121,31 @@ body {
 #typeform-full {
     height: 100vh;
 }
+
+
+.project-container {
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.project-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.project-container a:hover{
+    color: indianred;
+}
+
+.project-container p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
