@@ -8,51 +8,23 @@
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <header class="main-head">
-        <div class="myname" onclick="loadHome()">Matthew Doto</div>
-        <div class="headerlink" onclick="loadResume()">Resume</div>
+        <a class="myname" href="/">Matthew Doto</a>
+        <a class="headerlink" href="/resume.pdf" target="_blank">Resume</a>
         <a class="headerlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
         <a class="headerlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
-        <div class="headerlink" onclick="loadContact()">Contact</div>
-        <div class="headerlink" onclick="loadProjects()">Projects</div>
+        <a class="headerlink" href="/contact.html">Contact</a>
+        <a class="headerlink" href="/projects.html">Projects</a>
         <button class="navbutton" onclick="toggleAddlMenu()">&#8801;</button>
         <div id="addlMenu">
-            <div class="addlink" onclick="loadProjects()">Projects</div>
-            <div class="addlink" onclick="loadContact()">Contact</div>
-            <a class="addlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+            <a class="addlink" href="/projects.html">Projects</a>
+            <a class="addlink" href="/contact.html">Contact</a>
             <a class="addlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
-            <div class="addlink" onclick="loadResume()">Resume</div>
+            <a class="addlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+            <a class="addlink" href="/resume.pdf" target="_blank">Resume</a>
         </div>
     </header>
-    <div id="mainc" class="main-content"></div>
-    
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
-        $("#mainc").load("home.html");
-        /*$.get("home.html", function(data){
-            $("#mainc").replaceWith(data);
-        });*/
-        
-        $('html').click(function(){
-            $("#addlMenu").hide();
-        });
-        
-        function toggleAddlMenu(){
-            event.stopPropagation();
-            $("#addlMenu").toggle();
-        }
-
-        function loadHome(){
-            $("#mainc").load("home.html");
-        }
-        function loadProjects(){
-            $("#mainc").load("projects.html");
-        }
-        function loadContact(){
-            $("#mainc").load("contact.html");
-        }
-        function loadResume(){
-            $("#mainc").load("resume.html");
-        }
-    </script>
+    <div class="bodybox" style="background-color: red;"><h1>I am a software developer &amp; general computer nerd</h1></div>
+    <div class="bodybox" style="background-color: silver;"><p>I am in my second year at Stevens Institute of Technology</p></div>
+    <div class="bodybox" style="background-color: light-gray;"><p>I work at McKinsey &amp; Company in New York City as a Network Engineering Intern</p></div>
 </body>
 </html>
