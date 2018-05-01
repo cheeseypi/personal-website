@@ -40,6 +40,7 @@ body {
 }
 
 .headerlink {
+    transition: background-color .3s;
     color: white;
     display: inline-block;
     height: 55px;
@@ -138,6 +139,7 @@ body {
 }
 
 .project-container a{
+    transition: color .3s;
     color: white;
     text-decoration: none;
 }
