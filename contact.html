@@ -28,7 +28,7 @@
     <script>
     var menuShown = false;
     document.addEventListener("click", function(e) {
-        if(e.target.id != "addlMenu"){
+        if(e.target.className != "navbutton"){
             document.getElementById("addlMenu").style.display="none";
             menuShown = false;
 	   }
