@@ -26,11 +26,21 @@
     <div class="bodybox" style="background-color: red;"><h1>I am a software developer &amp; general computer nerd</h1></div>
     <div class="bodybox" style="background-color: silver;"><p>I am in my second year at Stevens Institute of Technology</p></div>
     <div class="bodybox" style="background-color: light-gray;"><p>I work at McKinsey &amp; Company in New York City as a Network Engineering Intern</p></div>
-    <script src="//code.jquery.com/jquery.min.js"></script>
     <script>
+    var menuShown = false;
+    document.addEventListener("click", function(e) {
+        document.getElementById("addlMenu").style.display="none";
+        menuShown = false;
+    });
     function toggleAddlMenu(){
         event.stopPropagation();
-        $("#addlMenu").toggle();
+	   if(menuShown){
+            document.getElementById("addlMenu").style.display="none";
+	   }
+	   else{
+            document.getElementById("addlMenu").style.display="block";
+	   }
+       menuShown = !menuShown;
     }
     </script>
 </body>

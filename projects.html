@@ -30,14 +30,31 @@
          <p>The Network State Master for McKinsey &amp; Company. Allows for a single point of contact to get information about all intranet network devices. Has both a GUI and an API portion, both initially developed by me in Summer 2017 up to a Minimum Viable Product, allowing for users to dynamically receive up-to-date network information within programs or on the website. I have continued working on it in my Spring 2018 internship there, and it is now in production use.</p>
     </div>
     <div class="project-container">
-        <h1><a href="https://pypi.org/project/groupmescoretracker/">GroupMe Score Tracker</a></h1>
+        <h1><a href="https://pypi.org/project/groupmescoretracker/" target="_blank">GroupMe Score Tracker</a></h1>
         <hr />
         <p>A bot for GroupMe that allows for users to track arbitrary "scores". Use it to spice up your group chats with a little friendly competition!</p>
     </div>
     <div class="project-container">
-        <h1><a href="https://github.com/DuckHacksS2018-shrugface/travelpet-api">TravelPet Backend API</a></h1>
+        <h1><a href="https://github.com/DuckHacksS2018-shrugface/travelpet-api" target="_blank">TravelPet Backend API</a></h1>
         <hr />
         <p>Project for DuckHacks 2018; A cloud-based virtual pet API. Taking the tamagotchis of old into the cloud!</p>
     </div>
+    <script>
+    var menuShown = false;
+    document.addEventListener("click", function(e) {
+        document.getElementById("addlMenu").style.display="none";
+        menuShown = false;
+    });
+    function toggleAddlMenu(){
+        event.stopPropagation();
+	   if(menuShown){
+            document.getElementById("addlMenu").style.display="none";
+	   }
+	   else{
+            document.getElementById("addlMenu").style.display="block";
+	   }
+       menuShown = !menuShown;
+    }
+    </script>
 </body>
 </html>

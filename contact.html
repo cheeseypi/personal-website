@@ -23,6 +23,24 @@
             <a class="addlink" href="/resume.pdf" target="_blank">Resume</a>
         </div>
     </header>
-    <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://matthewdoto.typeform.com/to/D4DfkQ"></iframe> <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
+    <p class="contactinfo">I can be reached via email, or via direct message on LinkedIn.<br /><a href="mailto:matt@mattdoto.com">matt@mattdoto.com</a></p>
+    <p class="contactinfo">Eventually, there will be a direct contact form present here. Check back regularly!</p>
+    <script>
+    var menuShown = false;
+    document.addEventListener("click", function(e) {
+        document.getElementById("addlMenu").style.display="none";
+        menuShown = false;
+    });
+    function toggleAddlMenu(){
+        event.stopPropagation();
+	   if(menuShown){
+            document.getElementById("addlMenu").style.display="none";
+	   }
+	   else{
+            document.getElementById("addlMenu").style.display="block";
+	   }
+       menuShown = !menuShown;
+    }
+    </script>
 </body>
 </html>
