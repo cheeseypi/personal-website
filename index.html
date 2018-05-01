@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans" rel="stylesheet">
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="scripts.js"></script>
 </head>
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,5 +27,11 @@
     <div class="bodybox" style="background-color: red;"><h1>I am a software developer &amp; general computer nerd</h1></div>
     <div class="bodybox" style="background-color: silver;"><p>I am in my second year at Stevens Institute of Technology</p></div>
     <div class="bodybox" style="background-color: light-gray;"><p>I work at McKinsey &amp; Company in New York City as a Network Engineering Intern</p></div>
+    <script>
+    function toggleAddlMenu(){
+        event.stopPropagation();
+        $("#addlMenu").toggle();
+    }
+    </script>
 </body>
 </html>
