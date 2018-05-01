@@ -29,8 +29,10 @@
     <script>
     var menuShown = false;
     document.addEventListener("click", function(e) {
-        document.getElementById("addlMenu").style.display="none";
-        menuShown = false;
+        if(e.target.id != "addlMenu"){
+            document.getElementById("addlMenu").style.display="none";
+            menuShown = false;
+	   }
     });
     function toggleAddlMenu(){
 	   if(menuShown){
