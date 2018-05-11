@@ -24,7 +24,13 @@
         </div>
     </header>
     <p class="contactinfo">I can be reached via email, or via direct message on LinkedIn.<br /><a href="mailto:matt@mattdoto.com">matt@mattdoto.com</a></p>
-    <p class="contactinfo">Eventually, there will be a direct contact form present here. Check back regularly!</p>
+    <p class="contactinfo">
+        <form action="http://zeppelin.mattdoto.com:25565/">
+		   <input type="text" name="email" placeholder="Your Email" /><br />
+		   <input type="text" name="subject" placeholder="Subject" /><br />
+		   <textarea name="body" placeholder="Message" rows="5"></textarea>
+	   </form>
+    </p>
     <script>
     var menuShown = false;
     document.addEventListener("click", function(e) {
