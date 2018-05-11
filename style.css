@@ -157,6 +157,7 @@ body {
 
 .contactinfo {
     text-align: center;
+    align-content: center;
     margin-left: 10px;
     margin-right: 10px;
     display: block;
@@ -171,4 +172,8 @@ body {
 }
 .contactinfo:hover {
     box-shadow: 0px 5px 10px;
+}
+
+.formitem {
+	width: 300px;
 }
