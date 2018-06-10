@@ -9,53 +9,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <header class="main-head">
         <a class="myname" href="/">Matthew Doto</a>
+        
+        
         <a class="headerlink" href="/resume.pdf" target="_blank">Resume</a>
-        <a class="headerlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
-        <a class="headerlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
+        
+        
+        
+        <a class="headerlink" href="https://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+        
+        
+        
+        <a class="headerlink" href="https://www.github.com/cheeseypi" target="_blank">GitHub</a>
+        
+        
+        
         <a class="headerlink" href="/contact.html">Contact</a>
+        
+        
+        
         <a class="headerlink" href="/projects.html">Projects</a>
+        
+        
         <button class="navbutton" onclick="toggleAddlMenu()">&#8801;</button>
         <div id="addlMenu">
-            <a class="addlink" href="/projects.html">Projects</a>
-            <a class="addlink" href="/contact.html">Contact</a>
-            <a class="addlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
-            <a class="addlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+            
+            
             <a class="addlink" href="/resume.pdf" target="_blank">Resume</a>
+            
+            
+            
+            <a class="addlink" href="https://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+            
+            
+            
+            <a class="addlink" href="https://www.github.com/cheeseypi" target="_blank">GitHub</a>
+            
+            
+            
+            <a class="addlink" href="/contact.html">Contact</a>
+            
+            
+            
+            <a class="addlink" href="/projects.html">Projects</a>
+            
+            
         </div>
     </header>
-    <div>&nbsp;</div>
-    <div class="project-container">
-         <h1>McKinsey NSM</h1>
-         <hr />
-         <p>The Network State Master for McKinsey &amp; Company. Allows for a single point of contact to get information about all intranet network devices. Has both a GUI and an API portion, both initially developed by me in Summer 2017 up to a Minimum Viable Product, allowing for users to dynamically receive up-to-date network information within programs or on the website. I have continued working on it in my Spring 2018 internship there, and it is now in production use.</p>
-    </div>
-    <div class="project-container">
-        <h1><a href="https://pypi.org/project/groupmescoretracker/" target="_blank">GroupMe Score Tracker</a></h1>
-        <hr />
-        <p>A bot for GroupMe that allows for users to track arbitrary "scores". Use it to spice up your group chats with a little friendly competition!</p>
-    </div>
-    <div class="project-container">
-        <h1><a href="https://github.com/DuckHacksS2018-shrugface/travelpet-api" target="_blank">TravelPet Backend API</a></h1>
-        <hr />
-        <p>Project for DuckHacks 2018; A cloud-based virtual pet API. Taking the tamagotchis of old into the cloud!</p>
-    </div>
+    
+    <div class="bodybox" ><h1>McKinsey NSM</h1><hr /><p>The Network State Master for McKinsey &amp; Company. Allows for a single point of contact to get information about all intranet network devices. Has both a GUI and an API portion, both initially developed by me in Summer 2017 up to a Minimum Viable Product, allowing for users to dynamically receive up-to-date network information within programs or on the website. I have continued working on it in my Spring 2018 internship there, and it is now in production use.</p></div>
+    
+    <div class="bodybox" ><h1><a href="https://pypi.org/project/groupmescoretracker/" target="_blank">GroupMe Score Tracker</a></h1><hr /><p>A bot for GroupMe that allows for users to track arbitrary "scores". Use it to spice up your group chats with a little friendly competition!</p></div>
+    
+    <div class="bodybox" ><h1><a href="https://github.com/DuckHacksS2018-shrugface/travelpet-api" target="_blank">TravelPet Backend API</a></h1><hr /><p>Project for DuckHacks 2018; A cloud-based virtual pet API. Taking the tamagotchis of old into the cloud!</p></div>
+    
     <script>
-    var menuShown = false;
-    document.addEventListener("click", function(e) {
-        if(e.target.className != "navbutton"){
-            document.getElementById("addlMenu").style.display="none";
-            menuShown = false;
-	   }
-    });
-    function toggleAddlMenu(){
-	   if(menuShown){
-            document.getElementById("addlMenu").style.display="none";
-	   }
-	   else{
-            document.getElementById("addlMenu").style.display="block";
-	   }
-       menuShown = !menuShown;
-    }
+     var menuShown = false;
+     document.addEventListener("click", function(e) {
+         if(e.target.className != "navbutton"){
+             document.getElementById("addlMenu").style.display="none";
+             menuShown = false;
+	       }
+     });
+     function toggleAddlMenu(){
+	       if(menuShown){
+             document.getElementById("addlMenu").style.display="none";
+	       }
+	       else{
+             document.getElementById("addlMenu").style.display="block";
+	       }
+         menuShown = !menuShown;
+     }
     </script>
 </body>
 </html>

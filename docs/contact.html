@@ -9,47 +9,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <header class="main-head">
         <a class="myname" href="/">Matthew Doto</a>
+        
+        
         <a class="headerlink" href="/resume.pdf" target="_blank">Resume</a>
-        <a class="headerlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
-        <a class="headerlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
+        
+        
+        
+        <a class="headerlink" href="https://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+        
+        
+        
+        <a class="headerlink" href="https://www.github.com/cheeseypi" target="_blank">GitHub</a>
+        
+        
+        
         <a class="headerlink" href="/contact.html">Contact</a>
+        
+        
+        
         <a class="headerlink" href="/projects.html">Projects</a>
+        
+        
         <button class="navbutton" onclick="toggleAddlMenu()">&#8801;</button>
         <div id="addlMenu">
-            <a class="addlink" href="/projects.html">Projects</a>
-            <a class="addlink" href="/contact.html">Contact</a>
-            <a class="addlink" href="http://www.github.com/Cheeseypi" target="_blank">Github</a>
-            <a class="addlink" href="http://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+            
+            
             <a class="addlink" href="/resume.pdf" target="_blank">Resume</a>
+            
+            
+            
+            <a class="addlink" href="https://www.linkedin.com/in/matt-doto" target="_blank">LinkedIn</a>
+            
+            
+            
+            <a class="addlink" href="https://www.github.com/cheeseypi" target="_blank">GitHub</a>
+            
+            
+            
+            <a class="addlink" href="/contact.html">Contact</a>
+            
+            
+            
+            <a class="addlink" href="/projects.html">Projects</a>
+            
+            
         </div>
     </header>
-    <p class="contactinfo">I can be reached via email, or via direct message on LinkedIn.<br /><a href="mailto:matt@mattdoto.com">matt@mattdoto.com</a></p>
-    <p class="contactinfo">Eventually, there will be a direct contact form present here. Check back regularly!</p>
-    <!--<div class="contactinfo">
-        <form action="http://zeppelin.mattdoto.com:25565/" method="post">
-		   <input class="formitem" type="text" name="email" placeholder="Your Email" /><br />
-		   <input class="formitem" type="text" name="subject" placeholder="Subject" /><br />
-		   <textarea class="formitem" name="body" placeholder="Message" rows="5"></textarea><br />
-		   <input type="submit" />
-	   </form>
-    </div>-->
+    
+    <div class="bodybox" ><p>I can be reached via email, or via direct message on LinkedIn.<br /><a href="mailto:matt@mattdoto.com">matt@mattdoto.com</a></p></div>
+    
+    <div class="bodybox" ><p>Eventually, there will be a direct contact form present here. Check back regularly!</p></div>
+    
     <script>
-    var menuShown = false;
-    document.addEventListener("click", function(e) {
-        if(e.target.className != "navbutton"){
-            document.getElementById("addlMenu").style.display="none";
-            menuShown = false;
-	   }
-    });
-    function toggleAddlMenu(){
-	   if(menuShown){
-            document.getElementById("addlMenu").style.display="none";
-	   }
-	   else{
-            document.getElementById("addlMenu").style.display="block";
-	   }
-       menuShown = !menuShown;
-    }
+     var menuShown = false;
+     document.addEventListener("click", function(e) {
+         if(e.target.className != "navbutton"){
+             document.getElementById("addlMenu").style.display="none";
+             menuShown = false;
+	       }
+     });
+     function toggleAddlMenu(){
+	       if(menuShown){
+             document.getElementById("addlMenu").style.display="none";
+	       }
+	       else{
+             document.getElementById("addlMenu").style.display="block";
+	       }
+         menuShown = !menuShown;
+     }
     </script>
 </body>
 </html>
