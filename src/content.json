@@ -1,0 +1,44 @@
+{
+    "links": [
+        {
+            "name": "Resume",
+            "type": "link",
+            "href": "/resume.pdf"
+        },
+        {
+            "name": "LinkedIn",
+            "type": "link",
+            "href": "https://www.linkedin.com/in/matt-doto"
+        },
+        {
+            "name": "GitHub",
+            "type": "link",
+            "href": "https://www.github.com/cheeseypi"
+        },
+        {
+            "name": "Contact",
+            "type": "page",
+            "href": "contact.html"
+        },
+        {
+            "name": "Projects",
+            "type": "page",
+            "href": "projects.html"
+        }
+    ],
+    "content": {
+        "projects": [
+            "<h1>McKinsey NSM</h1><hr /><p>The Network State Master for McKinsey &amp; Company. Allows for a single point of contact to get information about all intranet network devices. Has both a GUI and an API portion, both initially developed by me in Summer 2017 up to a Minimum Viable Product, allowing for users to dynamically receive up-to-date network information within programs or on the website. I have continued working on it in my Spring 2018 internship there, and it is now in production use.</p>",
+        "<h1><a href=\"https://pypi.org/project/groupmescoretracker/\" target=\"_blank\">GroupMe Score Tracker</a></h1><hr /><p>A bot for GroupMe that allows for users to track arbitrary \"scores\". Use it to spice up your group chats with a little friendly competition!</p>",
+        "<h1><a href=\"https://github.com/DuckHacksS2018-shrugface/travelpet-api\" target=\"_blank\">TravelPet Backend API</a></h1><hr /><p>Project for DuckHacks 2018; A cloud-based virtual pet API. Taking the tamagotchis of old into the cloud!</p>"
+        ],
+        "contact": [
+            "<p>I can be reached via email, or via direct message on LinkedIn.<br /><a href=\"mailto:matt@mattdoto.com\">matt@mattdoto.com</a></p>",
+            "<p>Eventually, there will be a direct contact form present here. Check back regularly!</p>"
+        ],
+        "index": [
+            "<h1>I am a software developer &amp; general computer nerd</h1>",
+            "<p>I am in my second year at Stevens Institute of Technology</p>"
+        ]
+    }
+}
