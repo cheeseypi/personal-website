@@ -1,0 +1,6 @@
+.bodybox
+  a(*ngIf="this.card.href" href="{{this.card.href}}")
+    h1 {{this.card.title}}
+  h1(*ngIf="!this.card.href && this.card.title") {{this.card.title}}
+  hr(*ngIf="this.card.title")
+  p {{this.card.description}}

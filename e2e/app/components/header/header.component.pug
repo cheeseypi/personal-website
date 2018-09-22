@@ -1,0 +1,5 @@
+.main-head
+  a.myname(routerLink="/") Matthew Doto
+  div(*ngFor="let link of this.links")
+    a.headerlink(*ngIf="link.type === this.headerLinkType.link", href="{{link.href}}", target="_blank") {{link.name}}
+    a.headerlink(*ngIf="link.type === this.headerLinkType.page", routerLink="{{link.href}}") {{link.name}}
